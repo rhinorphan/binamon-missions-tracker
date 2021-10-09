@@ -6,8 +6,16 @@ request_mission1.onload = function () {
 
 var data1 = JSON.parse(this.response)
 
-document.getElementById("mission1").innerHTML = (data1.result)/1000000000000000000 + " BMON"; 
+document.getElementById("mission1").innerHTML = (data1.result)/1000000000000000000 + " BMON";
+
+if (data1.result < 1000000000000000000000) {
+  document.getElementById("status1").innerHTML = 'Mission 1 - 🔴'
+} else if (data1.result < 7000000000000000000000) {
+  document.getElementById("status1").innerHTML = 'Mission 1 - 🟠'
+} else if (data1.result > 7000000000000000000000) 
+  document.getElementById("status1").innerHTML = 'Mission 1 - 🟢';
 }
+
 
 request_mission1.send()
 
@@ -19,7 +27,14 @@ request_mission2.onload = function () {
 
 var data2 = JSON.parse(this.response)
 
-document.getElementById("mission2").innerHTML = (data2.result)/1000000000000000000 + " BUSD"; 
+document.getElementById("mission2").innerHTML = (data2.result)/1000000000000000000 + " BUSD";
+
+if (data2.result < 1000000000000000000000) {
+  document.getElementById("status2").innerHTML = 'Mission 2 - 🔴'
+} else if (data2.result < 7000000000000000000000) {
+  document.getElementById("status2").innerHTML = 'Mission 2 - 🟠'
+} else if (data2.result > 7000000000000000000000) 
+  document.getElementById("status2").innerHTML = 'Mission 2 - 🟢';
 }
 
 request_mission2.send()
@@ -32,7 +47,14 @@ request_mission3.onload = function () {
 
 var data3 = JSON.parse(this.response)
 
-document.getElementById("mission3").innerHTML = (data3.result)/1000000000000000000 + " BUSD"; 
+document.getElementById("mission3").innerHTML = (data3.result)/1000000000000000000 + " BUSD";
+
+if (data3.result < 1000000000000000000000) {
+  document.getElementById("status3").innerHTML = 'Mission 3 - 🔴'
+} else if (data3.result < 7000000000000000000000) {
+  document.getElementById("status3").innerHTML = 'Mission 3 - 🟠'
+} else if (data3.result > 7000000000000000000000) 
+  document.getElementById("status3").innerHTML = 'Mission 3 - 🟢';
 }
 
 request_mission3.send()
@@ -45,7 +67,14 @@ request_mission4.onload = function () {
 
 var data4 = JSON.parse(this.response)
 
-document.getElementById("mission4").innerHTML = (data4.result)/1000000000000000000 + " BUSD"; 
+document.getElementById("mission4").innerHTML = (data4.result)/1000000000000000000 + " BUSD";
+
+if (data4.result < 1000000000000000000000) {
+  document.getElementById("status4").innerHTML = 'Mission 4 - 🔴'
+} else if (data4.result < 7000000000000000000000) {
+  document.getElementById("status4").innerHTML = 'Mission 4 - 🟠'
+} else if (data4.result > 7000000000000000000000) 
+  document.getElementById("status4").innerHTML = 'Mission 4 - 🟢';
 }
 
 request_mission4.send()
@@ -59,7 +88,14 @@ setTimeout(function() {
 
   var data5 = JSON.parse(this.response)
 
-  document.getElementById("mission5").innerHTML = (data5.result)/1000000000000000000 + " BMON"; 
+  document.getElementById("mission5").innerHTML = (data5.result)/1000000000000000000 + " BMON";
+  
+  if (data5.result < 1000000000000000000000) {
+    document.getElementById("status5").innerHTML = 'Mission 5 - 🔴'
+  } else if (data5.result < 7000000000000000000000) {
+    document.getElementById("status5").innerHTML = 'Mission 5 - 🟠'
+  } else if (data5.result > 7000000000000000000000) 
+    document.getElementById("status5").innerHTML = 'Mission 5 - 🟢';
   }
 
   request_mission5.send()
@@ -72,7 +108,14 @@ setTimeout(function() {
 
   var data6 = JSON.parse(this.response)
 
-  document.getElementById("mission6").innerHTML = (data6.result)/1000000000000000000 + " BMON"; 
+  document.getElementById("mission6").innerHTML = (data6.result)/1000000000000000000 + " BMON";
+
+  if (data6.result < 1000000000000000000000) {
+    document.getElementById("status6").innerHTML = 'Mission 6 - 🔴'
+  } else if (data6.result < 7000000000000000000000) {
+    document.getElementById("status6").innerHTML = 'Mission 6 - 🟠'
+  } else if (data6.result > 7000000000000000000000) 
+    document.getElementById("status6").innerHTML = 'Mission 6 - 🟢';
   }
 
   request_mission6.send()
@@ -85,7 +128,14 @@ setTimeout(function() {
 
   var data7 = JSON.parse(this.response)
 
-  document.getElementById("mission7").innerHTML = (data7.result)/1000000000000000000 + " ADA"; 
+  document.getElementById("mission7").innerHTML = (data7.result)/1000000000000000000 + " ADA";
+  
+  if (data7.result < 1000000000000000000000) {
+    document.getElementById("status7").innerHTML = 'Mission 7 - 🔴'
+  } else if (data7.result < 7000000000000000000000) {
+    document.getElementById("status7").innerHTML = 'Mission 7 - 🟠'
+  } else if (data7.result > 7000000000000000000000) 
+    document.getElementById("status7").innerHTML = 'Mission 7 - 🟢';
   }
 
   request_mission7.send()
@@ -98,7 +148,14 @@ setTimeout(function() {
 
   var data8 = JSON.parse(this.response)
 
-  document.getElementById("mission8").innerHTML = (data8.result)/1000000000000000000 + " BMON-Z1"; 
+  document.getElementById("mission8").innerHTML = (data8.result)/1000000000000000000 + " BMON-Z1";
+  
+  if (data8.result < 1000000000000000000000) {
+    document.getElementById("status8").innerHTML = 'Mission 8 - 🔴'
+  } else if (data8.result < 7000000000000000000000) {
+    document.getElementById("status8").innerHTML = 'Mission 8 - 🟠'
+  } else if (data8.result > 7000000000000000000000) 
+    document.getElementById("status8").innerHTML = 'Mission 8 - 🟢';
   }
 
   request_mission8.send()
@@ -112,7 +169,14 @@ setTimeout(function() {
 
     var data9 = JSON.parse(this.response)
 
-    document.getElementById("mission9").innerHTML = (data9.result)/1000000000000000000 + " BMON"; 
+    document.getElementById("mission9").innerHTML = (data9.result)/1000000000000000000 + " BMON";
+    
+    if (data9.result < 1000000000000000000000) {
+      document.getElementById("status9").innerHTML = 'Mission 9 - 🔴'
+    } else if (data9.result < 7000000000000000000000) {
+      document.getElementById("status9").innerHTML = 'Mission 9 - 🟠'
+    } else if (data9.result > 7000000000000000000000) 
+      document.getElementById("status9").innerHTML = 'Mission 9 - 🟢';
     }
 
     request_mission9.send()
@@ -125,7 +189,14 @@ setTimeout(function() {
 
     var data10 = JSON.parse(this.response)
 
-    document.getElementById("mission10").innerHTML = (data10.result)/1000000000000000000 + " BMON"; 
+    document.getElementById("mission10").innerHTML = (data10.result)/1000000000000000000 + " BMON";
+    
+    if (data10.result < 1000000000000000000000) {
+      document.getElementById("status10").innerHTML = 'Mission 10 - 🔴'
+    } else if (data10.result < 7000000000000000000000) {
+      document.getElementById("status10").innerHTML = 'Mission 10 - 🟠'
+    } else if (data10.result > 7000000000000000000000) 
+      document.getElementById("status10").innerHTML = 'Mission 10 - 🟢';
     }
 
     request_mission10.send()
@@ -138,7 +209,14 @@ setTimeout(function() {
 
     var data11 = JSON.parse(this.response)
 
-    document.getElementById("mission11").innerHTML = (data11.result)/1000000000000000000 + " BMON-Z1"; 
+    document.getElementById("mission11").innerHTML = (data11.result)/1000000000000000000 + " BMON-Z1";
+    
+    if (data11.result < 1000000000000000000000) {
+      document.getElementById("status11").innerHTML = 'Mission 11 - 🔴'
+    } else if (data11.result < 7000000000000000000000) {
+      document.getElementById("status11").innerHTML = 'Mission 11 - 🟠'
+    } else if (data11.result > 7000000000000000000000) 
+      document.getElementById("status11").innerHTML = 'Mission 11 - 🟢';
     }
 
     request_mission11.send()
@@ -151,7 +229,14 @@ setTimeout(function() {
 
     var data12 = JSON.parse(this.response)
 
-    document.getElementById("mission12").innerHTML = (data12.result)/1000000000000000000 + " BMON"; 
+    document.getElementById("mission12").innerHTML = (data12.result)/1000000000000000000 + " BMON";
+
+    if (data12.result < 1000000000000000000000) {
+      document.getElementById("status12").innerHTML = 'Mission 12 - 🔴'
+    } else if (data12.result < 7000000000000000000000) {
+      document.getElementById("status12").innerHTML = 'Mission 12 - 🟠'
+    } else if (data12.result > 7000000000000000000000) 
+      document.getElementById("status12").innerHTML = 'Mission 12 - 🟢';
     }
 
     request_mission12.send()
@@ -166,6 +251,13 @@ setTimeout(function() {
       var data13 = JSON.parse(this.response)
 
       document.getElementById("mission13").innerHTML = (data13.result)/1000000000000000000 + " USDT"; 
+
+      if (data13.result < 1000000000000000000000) {
+        document.getElementById("status13").innerHTML = 'Mission 13 - 🔴'
+      } else if (data13.result < 7000000000000000000000) {
+        document.getElementById("status13").innerHTML = 'Mission 13 - 🟠'
+      } else if (data13.result > 7000000000000000000000) 
+        document.getElementById("status13").innerHTML = 'Mission 13 - 🟢';
       }
 
       request_mission13.send()
@@ -178,11 +270,18 @@ setTimeout(function() {
 
       var data14 = JSON.parse(this.response)
 
-      document.getElementById("mission14").innerHTML = (data14.result)/1000000000000000000 + " BUSD"; 
+      document.getElementById("mission14").innerHTML = (data14.result)/1000000000000000000 + " BUSD";
+      
+      if (data14.result < 1000000000000000000000) {
+        document.getElementById("status14").innerHTML = 'Mission 14 - 🔴'
+      } else if (data14.result < 7000000000000000000000) {
+        document.getElementById("status14").innerHTML = 'Mission 14 - 🟠'
+      } else if (data14.result > 7000000000000000000000) 
+        document.getElementById("status14").innerHTML = 'Mission 14 - 🟢';
       }
 
       request_mission14.send()
-    }, 1000)
-  }, 1000)
+    }, 3000)
+  }, 2000)
 }, 2000)
 
