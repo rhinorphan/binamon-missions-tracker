@@ -6,7 +6,7 @@ request_mission1.onload = function () {
 
 var data1 = JSON.parse(this.response)
 
-document.getElementById("mission1").innerHTML = (data1.result)/1000000000000000000 + " BMON";
+document.getElementById("mission1").innerHTML = ((data1.result)/1000000000000000000).toFixed(3) + " BMON";
 
 if (data1.result < 1000000000000000000000) {
   document.getElementById("status1").innerHTML = 'Mission 1 - 🔴'
@@ -27,7 +27,7 @@ request_mission2.onload = function () {
 
 var data2 = JSON.parse(this.response)
 
-document.getElementById("mission2").innerHTML = (data2.result)/1000000000000000000 + " BUSD";
+document.getElementById("mission2").innerHTML = ((data2.result)/1000000000000000000).toFixed(3) + " BUSD";
 
 if (data2.result < 1000000000000000000000) {
   document.getElementById("status2").innerHTML = 'Mission 2 - 🔴'
@@ -47,7 +47,7 @@ request_mission3.onload = function () {
 
 var data3 = JSON.parse(this.response)
 
-document.getElementById("mission3").innerHTML = (data3.result)/1000000000000000000 + " BUSD";
+document.getElementById("mission3").innerHTML = ((data3.result)/1000000000000000000).toFixed(3) + " BUSD";
 
 if (data3.result < 1000000000000000000000) {
   document.getElementById("status3").innerHTML = 'Mission 3 - 🔴'
@@ -67,7 +67,7 @@ request_mission4.onload = function () {
 
 var data4 = JSON.parse(this.response)
 
-document.getElementById("mission4").innerHTML = (data4.result)/1000000000000000000 + " BUSD";
+document.getElementById("mission4").innerHTML = ((data4.result)/1000000000000000000).toFixed(3) + " BUSD";
 
 if (data4.result < 1000000000000000000000) {
   document.getElementById("status4").innerHTML = 'Mission 4 - 🔴'
@@ -88,7 +88,7 @@ setTimeout(function() {
 
   var data5 = JSON.parse(this.response)
 
-  document.getElementById("mission5").innerHTML = (data5.result)/1000000000000000000 + " BMON";
+  document.getElementById("mission5").innerHTML = ((data5.result)/1000000000000000000).toFixed(3) + " BMON";
   
   if (data5.result < 1000000000000000000000) {
     document.getElementById("status5").innerHTML = 'Mission 5 - 🔴'
@@ -108,7 +108,7 @@ setTimeout(function() {
 
   var data6 = JSON.parse(this.response)
 
-  document.getElementById("mission6").innerHTML = (data6.result)/1000000000000000000 + " BMON";
+  document.getElementById("mission6").innerHTML = ((data6.result)/1000000000000000000).toFixed(3) + " BMON";
 
   if (data6.result < 1000000000000000000000) {
     document.getElementById("status6").innerHTML = 'Mission 6 - 🔴'
@@ -128,7 +128,7 @@ setTimeout(function() {
 
   var data7 = JSON.parse(this.response)
 
-  document.getElementById("mission7").innerHTML = (data7.result)/1000000000000000000 + " ADA";
+  document.getElementById("mission7").innerHTML = ((data7.result)/1000000000000000000).toFixed(3) + " ADA";
   
   if (data7.result < 1000000000000000000000) {
     document.getElementById("status7").innerHTML = 'Mission 7 - 🔴'
@@ -148,7 +148,7 @@ setTimeout(function() {
 
   var data8 = JSON.parse(this.response)
 
-  document.getElementById("mission8").innerHTML = (data8.result)/1000000000000000000 + " BMON-Z1";
+  document.getElementById("mission8").innerHTML = ((data8.result)/1000000000000000000).toFixed(3) + " BMON-Z1";
   
   if (data8.result < 1000000000000000000000) {
     document.getElementById("status8").innerHTML = 'Mission 8 - 🔴'
@@ -169,7 +169,7 @@ setTimeout(function() {
 
     var data9 = JSON.parse(this.response)
 
-    document.getElementById("mission9").innerHTML = (data9.result)/1000000000000000000 + " BMON";
+    document.getElementById("mission9").innerHTML = ((data9.result)/1000000000000000000).toFixed(3) + " BMON";
     
     if (data9.result < 1000000000000000000000) {
       document.getElementById("status9").innerHTML = 'Mission 9 - 🔴'
@@ -189,7 +189,7 @@ setTimeout(function() {
 
     var data10 = JSON.parse(this.response)
 
-    document.getElementById("mission10").innerHTML = (data10.result)/1000000000000000000 + " BMON";
+    document.getElementById("mission10").innerHTML = ((data10.result)/1000000000000000000).toFixed(3) + " BMON";
     
     if (data10.result < 1000000000000000000000) {
       document.getElementById("status10").innerHTML = 'Mission 10 - 🔴'
@@ -209,7 +209,7 @@ setTimeout(function() {
 
     var data11 = JSON.parse(this.response)
 
-    document.getElementById("mission11").innerHTML = (data11.result)/1000000000000000000 + " BMON-Z1";
+    document.getElementById("mission11").innerHTML = ((data11.result)/1000000000000000000).toFixed(3) + " BMON-Z1";
     
     if (data11.result < 1000000000000000000000) {
       document.getElementById("status11").innerHTML = 'Mission 11 - 🔴'
@@ -229,7 +229,7 @@ setTimeout(function() {
 
     var data12 = JSON.parse(this.response)
 
-    document.getElementById("mission12").innerHTML = (data12.result)/1000000000000000000 + " BMON";
+    document.getElementById("mission12").innerHTML = ((data12.result)/1000000000000000000).toFixed(3) + " BMON";
 
     if (data12.result < 1000000000000000000000) {
       document.getElementById("status12").innerHTML = 'Mission 12 - 🔴'
@@ -250,7 +250,7 @@ setTimeout(function() {
 
       var data13 = JSON.parse(this.response)
 
-      document.getElementById("mission13").innerHTML = (data13.result)/1000000000000000000 + " USDT"; 
+      document.getElementById("mission13").innerHTML = ((data13.result)/1000000000000000000).toFixed(3) + " USDT"; 
 
       if (data13.result < 1000000000000000000000) {
         document.getElementById("status13").innerHTML = 'Mission 13 - 🔴'
@@ -270,7 +270,7 @@ setTimeout(function() {
 
       var data14 = JSON.parse(this.response)
 
-      document.getElementById("mission14").innerHTML = (data14.result)/1000000000000000000 + " BUSD";
+      document.getElementById("mission14").innerHTML = ((data14.result)/1000000000000000000).toFixed(3) + " BUSD";
       
       if (data14.result < 1000000000000000000000) {
         document.getElementById("status14").innerHTML = 'Mission 14 - 🔴'
