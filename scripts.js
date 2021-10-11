@@ -1,3 +1,24 @@
+const intervalToLevels = (interval, levels) => {
+  const cbFun = (d, c) => {
+    let bb = d[1] % c[0],
+      aa = (d[1] - bb) / c[0];
+    aa = aa > 0 ? aa + c[1] : '';
+
+    return [d[0] + aa, bb];
+  };
+
+  let rslt = levels.scale.map((d, i, a) => a.slice(i).reduce((d, c) => d * c))
+    .map((d, i) => ([d, levels.units[i]]))
+    .reduce(cbFun, ['', interval]);
+  return rslt[0];
+};
+
+const TimeLevels = {
+  scale: [24, 60, 60, 1],
+  units: ['d ', 'h ', 'm ', 's ']
+};
+const secondsToString = interval => intervalToLevels(interval, TimeLevels);
+
 // Mission 1 
 var request_mission1 = new XMLHttpRequest()
 
@@ -269,7 +290,7 @@ setTimeout(function() {
       request_mission14.onload = function () {
 
       var data14 = JSON.parse(this.response)
-
+      
       document.getElementById("mission14").innerHTML = ((data14.result)/1000000000000000000).toFixed(3) + " BUSD";
       
       if (data14.result < 1000000000000000000000) {
@@ -281,7 +302,171 @@ setTimeout(function() {
       }
 
       request_mission14.send()
+      
+      // Mission 1 endblock 13387148
+      var request_mission1_time_left = new XMLHttpRequest()
+
+      request_mission1_time_left.open('GET', 'https://api.bscscan.com/api?module=block&action=getblockcountdown&blockno=13387148&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T', true)
+      request_mission1_time_left.onload = function () {
+
+        var data1TimeLeft = JSON.parse(this.response)
+        
+        if (data1TimeLeft.result.EstimateTimeInSec > 0) {
+          document.getElementById("mission1_timeleft").innerHTML = "Ongoing // " + secondsToString(data1TimeLeft.result.EstimateTimeInSec) + " left";
+        } else {
+          document.getElementById("mission1_timeleft").innerHTML = "Ended";
+        }
+      }
+
+      request_mission1_time_left.send()
+
+      // Mission 2/ 3/ 4 endblock 13409638
+      var request_mission234_time_left = new XMLHttpRequest()
+
+      request_mission234_time_left.open('GET', 'https://api.bscscan.com/api?module=block&action=getblockcountdown&blockno=13409638&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T', true)
+      request_mission234_time_left.onload = function () {
+
+        var data234TimeLeft = JSON.parse(this.response)
+        
+        if (data234TimeLeft.result.EstimateTimeInSec > 0) {
+          document.getElementById("mission2_timeleft").innerHTML = "Ongoing // " + secondsToString(data234TimeLeft.result.EstimateTimeInSec) + " left";
+          document.getElementById("mission3_timeleft").innerHTML = "Ongoing // " + secondsToString(data234TimeLeft.result.EstimateTimeInSec) + " left";
+          document.getElementById("mission4_timeleft").innerHTML = "Ongoing // " + secondsToString(data234TimeLeft.result.EstimateTimeInSec) + " left";
+        } else {
+          document.getElementById("mission2_timeleft").innerHTML = "Ended";
+          ("mission3_timeleft").innerHTML = "Ended";
+          ("mission4_timeleft").innerHTML = "Ended";
+        }
+      }
+
+      request_mission234_time_left.send()
+
+      setTimeout(function() {
+        // Mission 5 endblock 13505255
+        var request_mission5_time_left = new XMLHttpRequest()
+
+        request_mission5_time_left.open('GET', 'https://api.bscscan.com/api?module=block&action=getblockcountdown&blockno=13505255&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T', true)
+        request_mission5_time_left.onload = function () {
+
+          var data5TimeLeft = JSON.parse(this.response)
+        
+          if (data5TimeLeft.result.EstimateTimeInSec > 0) {
+            document.getElementById("mission5_timeleft").innerHTML = "Ongoing // " + secondsToString(data5TimeLeft.result.EstimateTimeInSec) + " left";
+          } else {
+          document.getElementById("mission5_timeleft").innerHTML = "Ended";
+          }
+        }
+
+        request_mission5_time_left.send()
+
+        // Mission 6 endblock 13529842
+        var request_mission6_time_left = new XMLHttpRequest()
+
+        request_mission6_time_left.open('GET', 'https://api.bscscan.com/api?module=block&action=getblockcountdown&blockno=13529842&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T', true)
+        request_mission6_time_left.onload = function () {
+
+          var data6TimeLeft = JSON.parse(this.response)
+        
+          if (data6TimeLeft.result.EstimateTimeInSec > 0) {
+            document.getElementById("mission6_timeleft").innerHTML = "Ongoing // " + secondsToString(data6TimeLeft.result.EstimateTimeInSec) + " left";
+          } else {
+          document.getElementById("mission6_timeleft").innerHTML = "Ended";
+          }
+        }
+
+        request_mission6_time_left.send()
+
+        // Mission 7 endblock 12258583
+        var request_mission7_time_left = new XMLHttpRequest()
+
+        request_mission7_time_left.open('GET', 'https://api.bscscan.com/api?module=block&action=getblockcountdown&blockno=12258583&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T', true)
+        request_mission7_time_left.onload = function () {
+
+          var data7TimeLeft = JSON.parse(this.response)
+        
+          if (data7TimeLeft.result.EstimateTimeInSec > 0) {
+            document.getElementById("mission7_timeleft").innerHTML = "Ongoing // " + secondsToString(data7TimeLeft.result.EstimateTimeInSec) + " left";
+          } else {
+          document.getElementById("mission7_timeleft").innerHTML = "Ended";
+          }
+        }
+
+        request_mission7_time_left.send()
+
+        // Mission 8 endblock 12287967
+        var request_mission8_time_left = new XMLHttpRequest()
+
+        request_mission8_time_left.open('GET', 'https://api.bscscan.com/api?module=block&action=getblockcountdown&blockno=12287967&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T', true)
+        request_mission8_time_left.onload = function () {
+
+          var data8TimeLeft = JSON.parse(this.response)
+        
+          if (data8TimeLeft.result.EstimateTimeInSec > 0) {
+            document.getElementById("mission8_timeleft").innerHTML = "Ongoing // " + secondsToString(data8TimeLeft.result.EstimateTimeInSec) + " left";
+          } else {
+          document.getElementById("mission8_timeleft").innerHTML = "Ended";
+          }
+        }
+
+        request_mission8_time_left.send()
+
+        setTimeout(function() {
+          // Mission 9 endblock 12288226
+          var request_mission9_time_left = new XMLHttpRequest()
+
+          request_mission9_time_left.open('GET', 'https://api.bscscan.com/api?module=block&action=getblockcountdown&blockno=12288226&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T', true)
+          request_mission9_time_left.onload = function () {
+
+            var data9TimeLeft = JSON.parse(this.response)
+        
+            if (data9TimeLeft.result.EstimateTimeInSec > 0) {
+              document.getElementById("mission9_timeleft").innerHTML = "Ongoing // " + secondsToString(data9TimeLeft.result.EstimateTimeInSec) + " left";
+            } else {
+              document.getElementById("mission9_timeleft").innerHTML = "Ended";
+            }
+          }
+
+          request_mission9_time_left.send()
+
+          // Mission 10 endblock 12324053
+          var request_mission10_time_left = new XMLHttpRequest()
+
+          request_mission10_time_left.open('GET', 'https://api.bscscan.com/api?module=block&action=getblockcountdown&blockno=12324053&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T', true)
+          request_mission10_time_left.onload = function () {
+
+            var data10TimeLeft = JSON.parse(this.response)
+        
+            if (data10TimeLeft.result.EstimateTimeInSec > 0) {
+              document.getElementById("mission10_timeleft").innerHTML = "Ongoing // " + secondsToString(data10TimeLeft.result.EstimateTimeInSec) + " left";
+            } else {
+              document.getElementById("mission10_timeleft").innerHTML = "Ended";
+            }
+          }
+
+          request_mission10_time_left.send()
+
+          // Mission 12 endblock 12316140
+          var request_mission12_time_left = new XMLHttpRequest()
+
+          request_mission12_time_left.open('GET', 'https://api.bscscan.com/api?module=block&action=getblockcountdown&blockno=12316140&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T', true)
+          request_mission12_time_left.onload = function () {
+
+            var data12TimeLeft = JSON.parse(this.response)
+        
+            if (data12TimeLeft.result.EstimateTimeInSec > 0) {
+              document.getElementById("mission12_timeleft").innerHTML = "Ongoing // " + secondsToString(data12TimeLeft.result.EstimateTimeInSec) + " left";
+            } else {
+              document.getElementById("mission12_timeleft").innerHTML = "Ended";
+            }
+          }
+
+          request_mission12_time_left.send()
+
+        }, 5000)
+      }, 4000)
     }, 3000)
   }, 2000)
-}, 2000)
+}, 1500)
+
+
 
