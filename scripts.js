@@ -31,9 +31,9 @@ document.getElementById("mission1").innerHTML = ((data1.result)/1000000000000000
 
 if (data1.result < 1000000000000000000000) {
   document.getElementById("status1").innerHTML = 'Mission 1 - 🔴'
-} else if (data1.result < 7000000000000000000000) {
+} else if (data1.result < 5000000000000000000000) {
   document.getElementById("status1").innerHTML = 'Mission 1 - 🟠'
-} else if (data1.result > 7000000000000000000000) 
+} else if (data1.result > 5000000000000000000000) 
   document.getElementById("status1").innerHTML = 'Mission 1 - 🟢';
 }
 
@@ -52,9 +52,9 @@ document.getElementById("mission2").innerHTML = ((data2.result)/1000000000000000
 
 if (data2.result < 1000000000000000000000) {
   document.getElementById("status2").innerHTML = 'Mission 2 - 🔴'
-} else if (data2.result < 7000000000000000000000) {
+} else if (data2.result < 5000000000000000000000) {
   document.getElementById("status2").innerHTML = 'Mission 2 - 🟠'
-} else if (data2.result > 7000000000000000000000) 
+} else if (data2.result > 5000000000000000000000) 
   document.getElementById("status2").innerHTML = 'Mission 2 - 🟢';
 }
 
@@ -72,9 +72,9 @@ document.getElementById("mission3").innerHTML = ((data3.result)/1000000000000000
 
 if (data3.result < 1000000000000000000000) {
   document.getElementById("status3").innerHTML = 'Mission 3 - 🔴'
-} else if (data3.result < 7000000000000000000000) {
+} else if (data3.result < 5000000000000000000000) {
   document.getElementById("status3").innerHTML = 'Mission 3 - 🟠'
-} else if (data3.result > 7000000000000000000000) 
+} else if (data3.result > 5000000000000000000000) 
   document.getElementById("status3").innerHTML = 'Mission 3 - 🟢';
 }
 
@@ -92,9 +92,9 @@ document.getElementById("mission4").innerHTML = ((data4.result)/1000000000000000
 
 if (data4.result < 1000000000000000000000) {
   document.getElementById("status4").innerHTML = 'Mission 4 - 🔴'
-} else if (data4.result < 7000000000000000000000) {
+} else if (data4.result < 5000000000000000000000) {
   document.getElementById("status4").innerHTML = 'Mission 4 - 🟠'
-} else if (data4.result > 7000000000000000000000) 
+} else if (data4.result > 5000000000000000000000) 
   document.getElementById("status4").innerHTML = 'Mission 4 - 🟢';
 }
 
@@ -113,9 +113,9 @@ setTimeout(function() {
   
   if (data5.result < 1000000000000000000000) {
     document.getElementById("status5").innerHTML = 'Mission 5 - 🔴'
-  } else if (data5.result < 7000000000000000000000) {
+  } else if (data5.result < 5000000000000000000000) {
     document.getElementById("status5").innerHTML = 'Mission 5 - 🟠'
-  } else if (data5.result > 7000000000000000000000) 
+  } else if (data5.result > 5000000000000000000000) 
     document.getElementById("status5").innerHTML = 'Mission 5 - 🟢';
   }
 
@@ -133,9 +133,9 @@ setTimeout(function() {
 
   if (data6.result < 1000000000000000000000) {
     document.getElementById("status6").innerHTML = 'Mission 6 - 🔴'
-  } else if (data6.result < 7000000000000000000000) {
+  } else if (data6.result < 5000000000000000000000) {
     document.getElementById("status6").innerHTML = 'Mission 6 - 🟠'
-  } else if (data6.result > 7000000000000000000000) 
+  } else if (data6.result > 5000000000000000000000) 
     document.getElementById("status6").innerHTML = 'Mission 6 - 🟢';
   }
 
@@ -153,9 +153,9 @@ setTimeout(function() {
   
   if (data7.result < 1000000000000000000000) {
     document.getElementById("status7").innerHTML = 'Mission 7 - 🔴'
-  } else if (data7.result < 7000000000000000000000) {
+  } else if (data7.result < 5000000000000000000000) {
     document.getElementById("status7").innerHTML = 'Mission 7 - 🟠'
-  } else if (data7.result > 7000000000000000000000) 
+  } else if (data7.result > 5000000000000000000000) 
     document.getElementById("status7").innerHTML = 'Mission 7 - 🟢';
   }
 
@@ -173,9 +173,9 @@ setTimeout(function() {
   
   if (data8.result < 1000000000000000000000) {
     document.getElementById("status8").innerHTML = 'Mission 8 - 🔴'
-  } else if (data8.result < 7000000000000000000000) {
+  } else if (data8.result < 5000000000000000000000) {
     document.getElementById("status8").innerHTML = 'Mission 8 - 🟠'
-  } else if (data8.result > 7000000000000000000000) 
+  } else if (data8.result > 5000000000000000000000) 
     document.getElementById("status8").innerHTML = 'Mission 8 - 🟢';
   }
 
@@ -194,9 +194,9 @@ setTimeout(function() {
     
     if (data9.result < 1000000000000000000000) {
       document.getElementById("status9").innerHTML = 'Mission 9 - 🔴'
-    } else if (data9.result < 7000000000000000000000) {
+    } else if (data9.result < 5000000000000000000000) {
       document.getElementById("status9").innerHTML = 'Mission 9 - 🟠'
-    } else if (data9.result > 7000000000000000000000) 
+    } else if (data9.result > 5000000000000000000000) 
       document.getElementById("status9").innerHTML = 'Mission 9 - 🟢';
     }
 
@@ -214,9 +214,9 @@ setTimeout(function() {
     
     if (data10.result < 1000000000000000000000) {
       document.getElementById("status10").innerHTML = 'Mission 10 - 🔴'
-    } else if (data10.result < 7000000000000000000000) {
+    } else if (data10.result < 5000000000000000000000) {
       document.getElementById("status10").innerHTML = 'Mission 10 - 🟠'
-    } else if (data10.result > 7000000000000000000000) 
+    } else if (data10.result > 5000000000000000000000) 
       document.getElementById("status10").innerHTML = 'Mission 10 - 🟢';
     }
 
@@ -234,9 +234,9 @@ setTimeout(function() {
     
     if (data11.result < 1000000000000000000000) {
       document.getElementById("status11").innerHTML = 'Mission 11 - 🔴'
-    } else if (data11.result < 7000000000000000000000) {
+    } else if (data11.result < 5000000000000000000000) {
       document.getElementById("status11").innerHTML = 'Mission 11 - 🟠'
-    } else if (data11.result > 7000000000000000000000) 
+    } else if (data11.result > 5000000000000000000000) 
       document.getElementById("status11").innerHTML = 'Mission 11 - 🟢';
     }
 
@@ -254,9 +254,9 @@ setTimeout(function() {
 
     if (data12.result < 1000000000000000000000) {
       document.getElementById("status12").innerHTML = 'Mission 12 - 🔴'
-    } else if (data12.result < 7000000000000000000000) {
+    } else if (data12.result < 5000000000000000000000) {
       document.getElementById("status12").innerHTML = 'Mission 12 - 🟠'
-    } else if (data12.result > 7000000000000000000000) 
+    } else if (data12.result > 5000000000000000000000) 
       document.getElementById("status12").innerHTML = 'Mission 12 - 🟢';
     }
 
@@ -275,9 +275,9 @@ setTimeout(function() {
 
       if (data13.result < 1000000000000000000000) {
         document.getElementById("status13").innerHTML = 'Mission 13 - 🔴'
-      } else if (data13.result < 7000000000000000000000) {
+      } else if (data13.result < 5000000000000000000000) {
         document.getElementById("status13").innerHTML = 'Mission 13 - 🟠'
-      } else if (data13.result > 7000000000000000000000) 
+      } else if (data13.result > 5000000000000000000000) 
         document.getElementById("status13").innerHTML = 'Mission 13 - 🟢';
       }
 
@@ -295,9 +295,9 @@ setTimeout(function() {
       
       if (data14.result < 1000000000000000000000) {
         document.getElementById("status14").innerHTML = 'Mission 14 - 🔴'
-      } else if (data14.result < 7000000000000000000000) {
+      } else if (data14.result < 5000000000000000000000) {
         document.getElementById("status14").innerHTML = 'Mission 14 - 🟠'
-      } else if (data14.result > 7000000000000000000000) 
+      } else if (data14.result > 5000000000000000000000) 
         document.getElementById("status14").innerHTML = 'Mission 14 - 🟢';
       }
 
@@ -312,9 +312,9 @@ setTimeout(function() {
         var data1TimeLeft = JSON.parse(this.response)
         
         if (data1TimeLeft.result.EstimateTimeInSec > 0) {
-          document.getElementById("mission1_timeleft").innerHTML = "Ongoing // " + secondsToString(data1TimeLeft.result.EstimateTimeInSec) + " left";
+          document.getElementById("mission1_timeleft").innerHTML = "Ongoing 🕙 " + secondsToString(data1TimeLeft.result.EstimateTimeInSec) + " left";
         } else {
-          document.getElementById("mission1_timeleft").innerHTML = "Ended";
+          document.getElementById("mission1_timeleft").innerHTML = "Ended 💀";
         }
       }
 
@@ -329,13 +329,13 @@ setTimeout(function() {
         var data234TimeLeft = JSON.parse(this.response)
         
         if (data234TimeLeft.result.EstimateTimeInSec > 0) {
-          document.getElementById("mission2_timeleft").innerHTML = "Ongoing // " + secondsToString(data234TimeLeft.result.EstimateTimeInSec) + " left";
-          document.getElementById("mission3_timeleft").innerHTML = "Ongoing // " + secondsToString(data234TimeLeft.result.EstimateTimeInSec) + " left";
-          document.getElementById("mission4_timeleft").innerHTML = "Ongoing // " + secondsToString(data234TimeLeft.result.EstimateTimeInSec) + " left";
+          document.getElementById("mission2_timeleft").innerHTML = "Ongoing 🕙 " + secondsToString(data234TimeLeft.result.EstimateTimeInSec) + " left";
+          document.getElementById("mission3_timeleft").innerHTML = "Ongoing 🕙 " + secondsToString(data234TimeLeft.result.EstimateTimeInSec) + " left";
+          document.getElementById("mission4_timeleft").innerHTML = "Ongoing 🕙 " + secondsToString(data234TimeLeft.result.EstimateTimeInSec) + " left";
         } else {
-          document.getElementById("mission2_timeleft").innerHTML = "Ended";
-          ("mission3_timeleft").innerHTML = "Ended";
-          ("mission4_timeleft").innerHTML = "Ended";
+          document.getElementById("mission2_timeleft").innerHTML = "Ended 💀";
+          ("mission3_timeleft").innerHTML = "Ended 💀";
+          ("mission4_timeleft").innerHTML = "Ended 💀";
         }
       }
 
@@ -351,9 +351,9 @@ setTimeout(function() {
           var data5TimeLeft = JSON.parse(this.response)
         
           if (data5TimeLeft.result.EstimateTimeInSec > 0) {
-            document.getElementById("mission5_timeleft").innerHTML = "Ongoing // " + secondsToString(data5TimeLeft.result.EstimateTimeInSec) + " left";
+            document.getElementById("mission5_timeleft").innerHTML = "Ongoing 🕙 " + secondsToString(data5TimeLeft.result.EstimateTimeInSec) + " left";
           } else {
-          document.getElementById("mission5_timeleft").innerHTML = "Ended";
+          document.getElementById("mission5_timeleft").innerHTML = "Ended 💀";
           }
         }
 
@@ -368,9 +368,9 @@ setTimeout(function() {
           var data6TimeLeft = JSON.parse(this.response)
         
           if (data6TimeLeft.result.EstimateTimeInSec > 0) {
-            document.getElementById("mission6_timeleft").innerHTML = "Ongoing // " + secondsToString(data6TimeLeft.result.EstimateTimeInSec) + " left";
+            document.getElementById("mission6_timeleft").innerHTML = "Ongoing 🕙 " + secondsToString(data6TimeLeft.result.EstimateTimeInSec) + " left";
           } else {
-          document.getElementById("mission6_timeleft").innerHTML = "Ended";
+          document.getElementById("mission6_timeleft").innerHTML = "Ended 💀";
           }
         }
 
@@ -385,9 +385,9 @@ setTimeout(function() {
           var data7TimeLeft = JSON.parse(this.response)
         
           if (data7TimeLeft.result.EstimateTimeInSec > 0) {
-            document.getElementById("mission7_timeleft").innerHTML = "Ongoing // " + secondsToString(data7TimeLeft.result.EstimateTimeInSec) + " left";
+            document.getElementById("mission7_timeleft").innerHTML = "Ongoing 🕙 " + secondsToString(data7TimeLeft.result.EstimateTimeInSec) + " left";
           } else {
-          document.getElementById("mission7_timeleft").innerHTML = "Ended";
+          document.getElementById("mission7_timeleft").innerHTML = "Ended 💀";
           }
         }
 
@@ -402,9 +402,9 @@ setTimeout(function() {
           var data8TimeLeft = JSON.parse(this.response)
         
           if (data8TimeLeft.result.EstimateTimeInSec > 0) {
-            document.getElementById("mission8_timeleft").innerHTML = "Ongoing // " + secondsToString(data8TimeLeft.result.EstimateTimeInSec) + " left";
+            document.getElementById("mission8_timeleft").innerHTML = "Ongoing 🕙 " + secondsToString(data8TimeLeft.result.EstimateTimeInSec) + " left";
           } else {
-          document.getElementById("mission8_timeleft").innerHTML = "Ended";
+          document.getElementById("mission8_timeleft").innerHTML = "Ended 💀";
           }
         }
 
@@ -420,9 +420,9 @@ setTimeout(function() {
             var data9TimeLeft = JSON.parse(this.response)
         
             if (data9TimeLeft.result.EstimateTimeInSec > 0) {
-              document.getElementById("mission9_timeleft").innerHTML = "Ongoing // " + secondsToString(data9TimeLeft.result.EstimateTimeInSec) + " left";
+              document.getElementById("mission9_timeleft").innerHTML = "Ongoing 🕙 " + secondsToString(data9TimeLeft.result.EstimateTimeInSec) + " left";
             } else {
-              document.getElementById("mission9_timeleft").innerHTML = "Ended";
+              document.getElementById("mission9_timeleft").innerHTML = "Ended 💀";
             }
           }
 
@@ -437,9 +437,9 @@ setTimeout(function() {
             var data10TimeLeft = JSON.parse(this.response)
         
             if (data10TimeLeft.result.EstimateTimeInSec > 0) {
-              document.getElementById("mission10_timeleft").innerHTML = "Ongoing // " + secondsToString(data10TimeLeft.result.EstimateTimeInSec) + " left";
+              document.getElementById("mission10_timeleft").innerHTML = "Ongoing 🕙 " + secondsToString(data10TimeLeft.result.EstimateTimeInSec) + " left";
             } else {
-              document.getElementById("mission10_timeleft").innerHTML = "Ended";
+              document.getElementById("mission10_timeleft").innerHTML = "Ended 💀";
             }
           }
 
@@ -454,9 +454,9 @@ setTimeout(function() {
             var data12TimeLeft = JSON.parse(this.response)
         
             if (data12TimeLeft.result.EstimateTimeInSec > 0) {
-              document.getElementById("mission12_timeleft").innerHTML = "Ongoing // " + secondsToString(data12TimeLeft.result.EstimateTimeInSec) + " left";
+              document.getElementById("mission12_timeleft").innerHTML = "Ongoing 🕙 " + secondsToString(data12TimeLeft.result.EstimateTimeInSec) + " left";
             } else {
-              document.getElementById("mission12_timeleft").innerHTML = "Ended";
+              document.getElementById("mission12_timeleft").innerHTML = "Ended 💀";
             }
           }
 
@@ -466,7 +466,7 @@ setTimeout(function() {
       }, 4000)
     }, 3000)
   }, 2000)
-}, 1500)
+}, 2000)
 
 
 
