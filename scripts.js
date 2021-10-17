@@ -256,7 +256,7 @@ setTimeout(function() {
           balanceMission(mission, id1, currency, id2, status1, status2, status3)
 
           //Mission 14
-          mission = 'https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=0xe9e7cea3dedca5984780bafc599bd69add087d56&address=0x7d0cdd23D8F0b8A9D0d6f5Eef77ADb4BaA551Afb&tag=latest&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T'
+          var mission = 'https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=0xe9e7cea3dedca5984780bafc599bd69add087d56&address=0x7d0cdd23D8F0b8A9D0d6f5Eef77ADb4BaA551Afb&tag=latest&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T'
           var id1 = "mission14"
           var currency = " BUSD"
           var id2 = "status14"
@@ -265,6 +265,23 @@ setTimeout(function() {
           var status3 = 'Mission 14 - 🟢'
     
           balanceMission(mission, id1, currency, id2, status1, status2, status3)
+
+          setTimeout(function() {
+            //Mission 15
+            var mission = 'https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=0x08ba0619b1e7a582e0bce5bbe9843322c954c340&address=0x943FC42488e8fCc6B3B19E61E33C07143C14F9C8&tag=latest&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T'
+            var id1 = "mission15"
+            var currency = "BMON"
+            var id2 = "status15"
+            var status1 = "Mission 15 - 🔴"
+            var status2 = "Mission 15 - 🟠"
+            var status3 = "Mission 15 - 🟢"
+            var time = 'https://api.bscscan.com/api?module=block&action=getblockcountdown&blockno=14425356&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T'
+            var id3 =  "mission15_timeleft"
+            var status_time = "Ongoing 🕙 "
+
+            balanceMission(mission, id1, currency, id2, status1, status2, status3)
+            timeLeft(time,id3,status_time)
+          }, 1000)
         }, 1000)
       }, 1000)
     }, 1000)
