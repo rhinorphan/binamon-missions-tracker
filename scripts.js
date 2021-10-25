@@ -281,7 +281,39 @@ setTimeout(function() {
 
             balanceMission(mission, id1, currency, id2, status1, status2, status3)
             timeLeft(time,id3,status_time)
-          }, 1000)
+
+            //Mission 16
+            var mission = 'https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=0xd8813b5dfa9abeb693f217bb905ec99b66fb017c&address=0xEB37a4517A85AAE584cCd8BB13B5C050fFF4A15F&tag=latest&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T'
+            var id1 = "mission16"
+            var currency = "BNRG"
+            var id2 = "status16"
+            var status1 = "Mission 16 - 🔴"
+            var status2 = "Mission 16 - 🟠"
+            var status3 = "Mission 16 - 🟢"
+            var time = 'https://api.bscscan.com/api?module=block&action=getblockcountdown&blockno=14448435&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T'
+            var id3 =  "mission16_timeleft"
+            var status_time = "Ongoing 🕙 "
+
+            balanceMission(mission, id1, currency, id2, status1, status2, status3)
+            timeLeft(time,id3,status_time)
+
+            setTimeout(function() {
+              //Mission 17
+              var mission = 'https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=0xd8813b5dfa9abeb693f217bb905ec99b66fb017c&address=0x73C112a24a0A2d17fDf93930F8f67bBf6B4bdDC5&tag=latest&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T'
+              var id1 = "mission17"
+              var currency = "BNRG"
+              var id2 = "status17"
+              var status1 = "Mission 17 - 🔴"
+              var status2 = "Mission 17 - 🟠"
+              var status3 = "Mission 17 - 🟢"
+              var time = 'https://api.bscscan.com/api?module=block&action=getblockcountdown&blockno=14448435&apikey=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T'
+              var id3 =  "mission17_timeleft"
+              var status_time = "Ongoing 🕙 "
+  
+              balanceMission(mission, id1, currency, id2, status1, status2, status3)
+              timeLeft(time,id3,status_time)
+            }, 1500)
+          }, 1500)
         }, 1000)
       }, 1000)
     }, 1000)
